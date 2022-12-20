@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<body>
+    <div>
+        <h2>Text input fields</h2>
+
+        <form>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="Nithya"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value="Shree">
+
+        </form>
+    </div>
+
+    <div>
+        <h2>Radio Buttons</h2>
+
+        <p>Choose your favorite Web language:</p>
+        <form>
+
+            <input type="radio" id="html" name="fav_language" value="HTML">
+            <label for="html">HTML</label><br>
+            <input type="radio" id="css" name="fav_language" value="CSS">
+            <label for="css">CSS</label><br>
+            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+            <label for="javascript">JavaScript</label>
+
+        </form>
+    </div>
+
+    <div>
+        <h2>The select Element</h2>
+
+        <p>The select element defines a drop-down list:</p>
+
+        <form action="/action_page.php">
+            <label for="cars">Choose a car:</label>
+            <select id="cars" name="cars">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="fiat">BMW</option>
+                <option value="audi">Audi</option>
+            </select>
+            <br>
+            <input type="submit">
+        </form>
+    </div>
+
+    <div>
+        <h2>Textarea</h2>
+        <p>The textarea element defines a multi-line input field.</p>
+
+        <form action="/action_page.php">
+            <textarea name="message" rows="10" cols="30">This text is the input of textarea .</textarea>
+            <br><br>
+            <input type="submit">
+        </form>
+
+    </div>
+    <div>
+        <h2>The output Element</h2>
+        <p>The output element represents the result of a calculation.</p>
+
+        <form action="/action_page.php" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+            0
+            <input type="range" id="a" name="a" value="50">
+            100 +
+            <input type="number" id="b" name="b" value="50">
+            =
+            <output name="x" for="a b"></output>
+            <br><br>
+            <input type="submit">
+        </form>
+    </div>
+    <div style="background-color:bisque;">
+
+        <h2>Date Field</h2>
+
+        <p>The <strong>input type="date"</strong> is used for input fields that should contain a date.</p>
+
+        <form action="/action_page.php">
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday">
+            <input type="submit" value="Submit">
+        </form>
+
+    </div>
+
+</body>
+
+</html>
